@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+      [NEW TALK] Automated Testing for Terraform, Docker, Packer, Kubernetes,
+      and More
+    </title>
+    <meta
+      name="description"
+      content='The home page of Yevgeniy (Jim) Brikman, co-founder of Gruntwork, author of "Hello, Startup" and "Terraform: Up & Running", and software engineer at LinkedIn, TripAdvisor, Cisco Systems, and Thomson Financial.'
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@brikis98" />
+    <meta
+      name="twitter:title"
+      content="[NEW TALK] Automated Testing for Terraform, Docker, Packer, Kubernetes, and More"
+    />
+    <meta name="twitter:url" content="index.html" />
+    <meta
+      name="twitter:description"
+      content="I’m happy to share with you the video and slides from my QCon talk on how to test infrastructure code! This talk is a step-by-step, live-coding class on how to write automated tests for infrastructure code, including the code you write for use with tools such as Terraform, Kubernetes, Docker, and Packer. Topics include unit tests, integration tests, end-to-end tests, test parallelism, retries, error handling, static analysis, and more."
+
+    <meta
+      property="og:title"
+      content="[NEW TALK] Automated Testing for Terraform, Docker, Packer, Kubernetes, and More"
+    />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Njoli Patrick" />
+    <meta
+      property="article:author"
+      content="https://www.facebook.com/brikis98"
+    />
+    <meta
+      property="og:description"
+      content="I’m happy to share with you the video and slides from my QCon talk on how to test infrastructure code! This talk is a step-by-step, live-coding class on how to write automated tests for infrastructure code, including the code you write for use with tools such as Terraform, Kubernetes, Docker, and Packer. Topics include unit tests, integration tests, end-to-end tests, test parallelism, retries, error handling, static analysis, and more."
+    />
+
+    <link rel="canonical" href="index.html" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Njoli Patrick"
+      href="../../../../../feed.xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../../../../assets/img/icons/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../../../../assets/img/icons/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../../../../assets/img/icons/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../../../../assets/img/icons/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../../../../assets/img/icons/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../../../../assets/img/icons/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../../../../assets/img/icons/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../../../../assets/img/icons/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../../../../assets/img/icons/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../../../../assets/img/icons/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../../../../assets/img/icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../../../../assets/img/icons/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../../../../assets/img/icons/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="../../../../../assets/img/icons/favicon/manifest.json"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../../../../../assets/img/icons/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Montserrat:400,700"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../../assets/css/main.css"
+    />
+  </head>
+
+  <body>
+    <nav class="clearfix border-bottom border-light-gray">
+      <div class="left">
+        <a
+          href="../../../../../index.html"
+          class="button py2 button-transparent nav-button caps"
+          >Njoli Patrick</a
+        >
+      </div>
+      <ul class="right list-reset m0 nav-collapse">
+        <li class="inline-block m0">
+          <a
+            href="../../../../index.html"
+            class="button button-transparent py2 h6 nav-button caps"
+            >writing</a
+          >
+        </li>
+        <li class="inline-block m0">
+          <a
+            href="../../../../../projects/index.html"
+            class="button button-transparent py2 h6 nav-button caps"
+            >projects</a
+          >
+        </li>
+        <li class="inline-block m0">
+          <a
+            href="https://www.linkedin.com/in/ogmaro/"
+            class="button button-transparent py2 h6 nav-button caps"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="bg-splash-gray px3 py3 border-bottom border-light-gray">
+      <div class="container">
+        <div class="clearfix">
+          <a href="index.html">
+            <h1 class="mt0 mb1">Git: Just Basics</h1>
+          </a>
+        </div>
+        <div>
+          <div class="gray h6">
+            <span class="mr1 nowrap">
+              <i class="fa fa-calendar"></i>
+              <time datetime="2021-11-18">Nov 18, 2021</time>
+            </span>
+
+            <span class="nowrap">
+              <i class="fa fa-clock-o"></i>
+              <span>6 min read</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container block p3">
+      <article class="post">
+        <div class="post-content">
+          <h3>
+            <em
+              >Know enough to get started to with the most popular version
+              control tool.</em
+            >
+          </h3>
+          <p>
+            In this article, I will be discussing the underlying technology that
+            powers some of the most popular version control platforms such as
+            Github, GitLab, Bitbucket, etc. This will be accompanied by some of
+            its popular syntax and how they are used. By the end of this
+            article, you should be familiar with Git, why it is important, and
+            how to use git in its most basic form to get started on your
+            projects.
+          </p>
+          <p>
+            You can find where i published this article on
+            <a
+              href="https://hashnode.com/post/git-just-basics-cl0ohfsqe03ot2onv6k30hrt0"
+              >Hashnode</a
+            >:
+          </p>
+          <figure>
+            <a
+              href="https://hashnode.com/post/git-just-basics-cl0ohfsqe03ot2onv6k30hrt0"
+              target="_blank"
+              ><img
+                data-src="/assets/img/blog/thumbs/git-img.png"
+                alt="Git: The Basics"
+                class="lazyload"
+              />
+            </a>
+            <figcaption>
+              <a
+                href="https://hashnode.com/post/git-just-basics-cl0ohfsqe03ot2onv6k30hrt0"
+                target="_blank"
+                >Git: The Basics</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="mt4">
+          <div class="circle-line-image center mt1">
+            <a href="../../../../../index.html">
+              <img
+                data-src="/assets/img/profile-photos/njoli-patrick.jpeg"
+                alt="Njoli Patrick"
+                class="lazyload border bg-white border-light-gray circle square-100"
+              />
+            </a>
+          </div>
+          <div class="clearfix">
+            <div class="sm-col sm-col-7">
+              <a href="../../../../../index.html">
+                <h3>Njoli Patrick</h3>
+              </a>
+              <p class="h5">
+                If you enjoyed this article, you may also like my blog on
+                <em
+                  ><a href="https://hashnode.com/@ogmaro" target="_blank"
+                    >Hashnode</a
+                  ></em
+                >
+                and you can reach me on
+                <em
+                  ><a href="https://www.linkedin.com/in/ogmaro/" target="_blank"
+                    >Linkedin</a
+                  >
+                  or on
+                </em>
+                <a href="https://twitter.com/_njoli" target="_blank">Twitter</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="sticky-footer border-top border-light-gray gray h6">
+      <div class="sm-col px2">&copy; 2022 Yevgeniy Brikman..</div>
+      <div class="sm-col-right px2">
+        <a
+          href="https://twitter.com/_njoli"
+          target="_blank"
+          class="gray hint--top"
+          data-hint="Twitter"
+        >
+          <i class="fa fa-fw fa-lg fa-twitter-square"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ogmaro"
+          target="_blank"
+          class="gray hint--top"
+          data-hint="LinkedIn"
+        >
+          <i class="fa fa-fw fa-lg fa-linkedin-square"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/maronation"
+          target="_blank"
+          class="gray hint--top"
+          data-hint="Facebook"
+        >
+          <i class="fa fa-fw fa-lg fa-facebook-square"></i>
+        </a>
+        <a
+          href="https://github.com/ogmaro/"
+          target="_blank"
+          class="gray hint--top"
+          data-hint="GitHub"
+        >
+          <i class="fa fa-fw fa-lg fa-github-square"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="../../../../../assets/js/main.js"
+    ></script>
+    <script type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "http://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-3107613-2", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
+</html>
